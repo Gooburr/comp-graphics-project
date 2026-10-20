@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Seagull
+  - Coconut
   layers:
   - Default
   - TransparentFX

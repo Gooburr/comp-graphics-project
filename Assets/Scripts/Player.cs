@@ -5,12 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 1.0f;
+    public int coconuts = 0;
     private Rigidbody rb;
     private Vector3 moveDir;
+    private coconutspawner spawner;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        spawner = FindObjectOfType<coconutspawner>();
     }
 
     // Update is called once per frame
@@ -41,6 +44,21 @@ public class Player : MonoBehaviour
         if (collision.transform.CompareTag("Seagull"))
         {
             Debug.Log("YOU DEAD!!!");
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Coconut"))
+        {
+
+            coconuts++;
+            Debug.Log("Coconut collected!!");
+            if(coconuts >=10)
+            {
+                Debug.Log("YOU WIN!!");
+            }
+            other.gameObject.SetActive(false);
+            spawner.SpawnCoconut();
         }
     }
 }
