@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody rb;
     private Vector3 moveDir;
     private coconutspawner spawner;
+    public int coconutsToWin = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
 
             coconuts++;
             Debug.Log("Coconut collected!!");
-            if(coconuts >=10)
+            if(coconuts >= coconutsToWin)
             {
                 Debug.Log("YOU WIN!!");
             }
