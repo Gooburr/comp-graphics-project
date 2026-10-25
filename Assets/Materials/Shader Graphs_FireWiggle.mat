@@ -25,10 +25,13 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Alpha: 0
+    - _Alpha: 0.5
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Emission: 0
+    - _Emission: 1
+    - _height_multiplier: 5
+    - _time_multiplier: 2
+    - _wiggle_multiplier: 20
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &1486846613688152459
