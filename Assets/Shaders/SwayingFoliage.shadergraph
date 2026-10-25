@@ -152,7 +152,14 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "6fe0e1ca39ae46dfab2b448825345bb6"
+        },
+        {
+            "m_Id": "ce7f9e257d23476ea299063c8c4e92a5"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -974,9 +981,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -331.9999694824219,
-            "y": 57.60002517700195,
+            "y": 74.39998626708985,
             "width": 125.60000610351563,
-            "height": 117.60000610351563
+            "height": 116.8000259399414
         }
     },
     "m_Slots": [
@@ -2168,6 +2175,26 @@
     },
     "m_Labels": [],
     "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "6fe0e1ca39ae46dfab2b448825345bb6",
+    "m_Title": "X-Y Swap",
+    "m_Content": "Swaps which axis that the object sways\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -699.2000122070313,
+        "y": -406.3999938964844,
+        "width": 200.00003051757813,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -3873,6 +3900,26 @@
     "m_NormalMapSpace": 0,
     "m_EnableGlobalMipBias": true,
     "m_MipSamplingMode": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "ce7f9e257d23476ea299063c8c4e92a5",
+    "m_Title": "Isolate Z",
+    "m_Content": "Isolates Z axis so we can slide based off of how hight the vertex is. Lerp is here so I can turn slanting on and off",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -684.0,
+        "y": 153.60000610351563,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
