@@ -37,7 +37,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseTex:
-        m_Texture: {fileID: 2800000, guid: d11adb8dc31a2f44daf77096e270ffb9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 82e7dea56dca75c4b8ea11ff64f0380e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -76,6 +76,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Toonramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Ambient: 1
@@ -94,11 +98,18 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RimLight: 1
+    - _RimPower: 1
+    - _RimSaturation: 1
     - _Shininess: 0.1
     - _SmoothnessTextureChannel: 0
-    - _Specular: 0
+    - _Specular: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Toon: 0
+    - _ToonMax: 1
+    - _ToonMin: 0.3
+    - _ToonShades: 0.49
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
@@ -106,5 +117,6 @@ Material:
     - _Color: {r: 0.31132078, g: 0.17152013, b: 0.17152013, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Light_Source: {r: 10, g: 10, b: -20.18, a: 0}
-    - _SpecularColor: {r: 1, g: 0.9193015, b: 0, a: 0}
+    - _RimColor: {r: 0.4056604, g: 0.21392746, b: 0.009184752, a: 0}
+    - _SpecularColor: {r: 0.5283019, g: 0.51492137, b: 0.36582413, a: 0}
   m_BuildTextureStacks: []
