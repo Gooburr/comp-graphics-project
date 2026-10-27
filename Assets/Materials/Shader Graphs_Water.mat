@@ -42,20 +42,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AddHeight: 1.2
+    - _AddHeight: 0.2
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _NoiseScale: 500
+    - _NoiseScale: 100
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RotateViewDir: 80
     - _Smoothness: 0.5
     - _TimeDivisor: 20
-    - _TimeHeight: 1
-    - _TimeSpeed: 1
+    - _TimeHeight: 0.03
+    - _TimeSpeed: 0.03
     m_Colors:
     - _Color_A: {r: 0.1701078, g: 0.2380999, b: 0.8867924, a: 1}
     - _Color_B: {r: 0.5314465, g: 0.916532, b: 1, a: 1}
+    - _offset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &344753152449632229
