@@ -28,15 +28,18 @@ Material:
     - _Alpha: 1
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Emission: 1
+    - _Emission: 0
     - _height_multiplier: 5
     - _pos_width_multiplier: 6
     - _sine_width_multiplier: 0.3
     - _time_multiplier: 2
     - _width_multiplier: 3
     - _wiggle_multiplier: 20
-    m_Colors: []
+    m_Colors:
+    - _Color_A: {r: 0.72327036, g: 0.20242468, b: 0.20242468, a: 1}
+    - _Color_B: {r: 0.8113208, g: 0.8113208, b: 0.2066571, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &1486846613688152459
 MonoBehaviour:
   m_ObjectHideFlags: 11
