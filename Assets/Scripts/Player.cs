@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rb.velocity = new Vector3(moveDir.x * speed, rb.velocity.y, moveDir.y * speed);
+        rb.linearVelocity = new Vector3(moveDir.x * speed, rb.linearVelocity.y, moveDir.y * speed);
     }
     private void OnCollisionEnter(Collision collision)
     {
