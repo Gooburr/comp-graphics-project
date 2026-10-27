@@ -120,3 +120,4 @@ Material:
     - _RimColor: {r: 0.4056604, g: 0.21392746, b: 0.009184752, a: 0}
     - _SpecularColor: {r: 0.5283019, g: 0.51492137, b: 0.36582413, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
