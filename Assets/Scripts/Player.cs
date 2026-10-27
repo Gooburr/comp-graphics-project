@@ -10,11 +10,13 @@ public class Player : MonoBehaviour
     private Vector3 moveDir;
     private coconutspawner spawner;
     public int coconutsToWin = 10;
+    public GameObject winText;
+    public GameObject loseText;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        spawner = FindObjectOfType<coconutspawner>();
+        spawner = FindFirstObjectByType<coconutspawner>();
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
         if (collision.transform.CompareTag("Seagull"))
         {
             Debug.Log("YOU DEAD!!!");
+            loseText.SetActive(true);
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -57,6 +60,7 @@ public class Player : MonoBehaviour
             if(coconuts >= coconutsToWin)
             {
                 Debug.Log("YOU WIN!!");
+                winText.SetActive(true);
             }
             other.gameObject.SetActive(false);
             spawner.SpawnCoconut();
