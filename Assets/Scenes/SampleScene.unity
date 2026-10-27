@@ -183,6 +183,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59da04a7b5b09a14f86147f6d33cd4db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7930712f3a285cf4196a37237340d7ce, type: 2}
     - target: {fileID: 919132149155446097, guid: 59da04a7b5b09a14f86147f6d33cd4db, type: 3}
       propertyPath: m_Name
       value: Palm Tree
@@ -256,6 +260,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59da04a7b5b09a14f86147f6d33cd4db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7930712f3a285cf4196a37237340d7ce, type: 2}
     - target: {fileID: 919132149155446097, guid: 59da04a7b5b09a14f86147f6d33cd4db, type: 3}
       propertyPath: m_Name
       value: Palm Tree (1)
@@ -881,6 +889,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59da04a7b5b09a14f86147f6d33cd4db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7930712f3a285cf4196a37237340d7ce, type: 2}
     - target: {fileID: 919132149155446097, guid: 59da04a7b5b09a14f86147f6d33cd4db, type: 3}
       propertyPath: m_Name
       value: Palm Tree (2)
