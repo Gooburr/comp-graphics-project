@@ -12,6 +12,13 @@ Controls:
 - 5 toggle toon shader
 Note all shaders toggled by number keys are on my default and only effect player model
 
+# Burr Anderson
+![water shader in shader graph](image-2.png)
+- water shader, uses a cubemap with an image of the sky alongside sine waves and noise to appear as moving water
+![fire shader in shader graph](image-3.png)
+- fire shader, uses a sine wave to "wiggle" the fire, alongside emissions and alpha to make it emit light and translucent. 
+- The colors also use a sine wave to vary along the height of the fire.
+
 # Jacob Coleman
 My shaders in order of when I made the,
 Shader #1: Swaying Foliage (used on palm trees)
@@ -30,6 +37,7 @@ date but I was having a hard time positioning it so I came up with a fun idea si
 and painted a map for wing displacement 
 
 <img width="437" height="356" alt="image" src="https://github.com/user-attachments/assets/b38d10d4-9a40-475e-ad91-6d584d0f7703" />
+
 after the map, it was as simple as adding a sin wave to make it go up an down.
 
 Shader #3: Lighting
@@ -48,16 +56,22 @@ an addition, then it's 0 and if it's false and multiplication it's 1.
 <img width="1065" height="727" alt="image" src="https://github.com/user-attachments/assets/0201e3ff-8fd8-4bd1-8fc5-4c0a662a0270" />
 everything all together looks like this
 
+Shader #4: Sand
+<img width="1297" height="736" alt="image" src="https://github.com/user-attachments/assets/d21d76b3-5af7-4963-bbac-9a1cc4b88007" />
+
+This one was quick a sloppy but I wanted the sand to tile and have a normal map so I just added a tiling node and a normal map sample buffer
+
+Sahder #5: Color Grading
+
+<img width="1917" height="925" alt="image" src="https://github.com/user-attachments/assets/ee4551c7-fd8f-4b20-aa79-e971db12314b" />
+
+So I did 3 color grading shaders due to our group size of 3. First off is the grayscale for the player death, which was just setting saturation to zero.
+I was afraid that wasn't enough so I also added a pixelation effect when you die. Which I did copy off a tutorial I found online.  The I had a brightness effect
+that just adds or subtracts colour from the scene making it lighter or darker. We were gonna have this be a setting slider but ran outta time for implementation.
+It does work though. Finally we have the sunset shader for winning the game. I just kida but together a bunch of simple effects I thought could look cool together.
+Adding an orange tint, a paper texture off the internet, and a fade transition node which I don't really know how it works but I liked what it was doing to the scene. All of these FX are also togglable with bools like the lighting. Also because we didn't have URP until we updated the project to Unity 6, I got experience creating and setting up a renderer for a scene which was a good learning expirience.
 
 
-
-
-# Burr Anderson
-![water shader in shader graph](image-2.png)
-- water shader, uses a cubemap with an image of the sky alongside sine waves and noise to appear as moving water
-![fire shader in shader graph](image-3.png)
-- fire shader, uses a sine wave to "wiggle" the fire, alongside emissions and alpha to make it emit light and translucent. 
-- The colors also use a sine wave to vary along the height of the fire.
-Jacob Coleman
 Zehra Suleman
+Initial Preposal:
 https://docs.google.com/document/d/1WpICWOhZylKiqK6zDBZAsAWr7lVRbFpCSJHpwwjpjZU/edit?tab=t.0
