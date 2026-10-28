@@ -89,3 +89,6 @@ Zehra Suleman
 
 Initial Preposal:
 https://docs.google.com/document/d/1WpICWOhZylKiqK6zDBZAsAWr7lVRbFpCSJHpwwjpjZU/edit?tab=t.0
+
+project progression video
+https://youtu.be/bhNrprUjXzY
