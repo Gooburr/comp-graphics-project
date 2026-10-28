@@ -10,7 +10,8 @@ Controls:
 - 3 toggle ambient
 - 4 toggle rim light
 - 5 toggle toon shader
-Note all shaders toggled by number keys are on my default and only effect player model
+
+*Note all shaders toggled by number keys are on my default and only effect player model
 
 # Burr Anderson
 ![water shader in shader graph](image-2.png)
