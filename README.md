@@ -28,6 +28,7 @@ Shader #2: Seagull
 This was my most creative and inspired shader. I wanted to make the seagull flap its wings using a shader. My first idea was to use positional
 date but I was having a hard time positioning it so I came up with a fun idea since we had just learnt about maps. I went into substance painter
 and painted a map for wing displacement 
+
 <img width="437" height="356" alt="image" src="https://github.com/user-attachments/assets/b38d10d4-9a40-475e-ad91-6d584d0f7703" />
 after the map, it was as simple as adding a sin wave to make it go up an down.
 
@@ -39,7 +40,13 @@ so the light direction was just a vector 3 at first. Thankfully we updated and a
 node. To make these I followed the formulas in the HLSL file we got when learning about this topic at first learning about lighting but in 
 shader graph form. Light direction is also negated cause the resualts were the opposite of what they should've been at first.
 <img width="1245" height="816" alt="image" src="https://github.com/user-attachments/assets/fb555643-37d2-485a-91c5-1a6d8c52d366" />
-Then we have 
+Then we have the specular and our two bonus implementations due to being a group of 3. These were more or less copies from the lecture slides
+with the slight change of using the view direction node instead of any HLSL script.
+<img width="880" height="737" alt="image" src="https://github.com/user-attachments/assets/bf3a5cde-0886-4b20-994c-688fe3069894" />
+Finally we got the toggle section this is a long list of branches that toggle on and off different types of lighting. If something is false and
+an addition, then it's 0 and if it's false and multiplication it's 1.
+<img width="1065" height="727" alt="image" src="https://github.com/user-attachments/assets/0201e3ff-8fd8-4bd1-8fc5-4c0a662a0270" />
+everything all together looks like this
 
 
 
