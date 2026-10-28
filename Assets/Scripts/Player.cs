@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public int coconutsToWin = 10;
     public GameObject winText;
     public GameObject loseText;
+    public GameObject playAgainButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
         if (collision.transform.CompareTag("Seagull"))
         {
             Debug.Log("YOU DEAD!!!");
+            playAgainButton.SetActive(true);
             loseText.SetActive(true);
         }
     }
@@ -60,6 +62,7 @@ public class Player : MonoBehaviour
             if(coconuts >= coconutsToWin)
             {
                 Debug.Log("YOU WIN!!");
+                playAgainButton.SetActive(true);
                 winText.SetActive(true);
             }
             other.gameObject.SetActive(false);
