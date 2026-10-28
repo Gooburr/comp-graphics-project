@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -13,11 +14,16 @@ public class Player : MonoBehaviour
     public GameObject winText;
     public GameObject loseText;
     public GameObject playAgainButton;
+    public Material ColorGrading;
+    public Text CoconutCounter;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         spawner = FindFirstObjectByType<coconutspawner>();
+        ColorGrading.SetFloat("_Grayscale",0f);
+        ColorGrading.SetFloat("_Sunset",0f);
+        ColorGrading.SetFloat("_PixelationToggle",0f);
     }
 
     // Update is called once per frame
@@ -50,6 +56,8 @@ public class Player : MonoBehaviour
             Debug.Log("YOU DEAD!!!");
             playAgainButton.SetActive(true);
             loseText.SetActive(true);
+            ColorGrading.SetFloat("_Grayscale",1f);
+            ColorGrading.SetFloat("_PixelationToggle",1f);
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -58,10 +66,12 @@ public class Player : MonoBehaviour
         {
 
             coconuts++;
+            CoconutCounter.text = ""+coconuts;
             Debug.Log("Coconut collected!!");
             if(coconuts >= coconutsToWin)
             {
                 Debug.Log("YOU WIN!!");
+                ColorGrading.SetFloat("_Sunset",1f);
                 playAgainButton.SetActive(true);
                 winText.SetActive(true);
             }

@@ -21,5 +21,13 @@ public class LightingControls : MonoBehaviour
         {
             lightingMaterial.SetFloat("_Ambient", lightingMaterial.GetFloat("_Ambient") != 1f ? 1f : 0f);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            lightingMaterial.SetFloat("_RimLight", lightingMaterial.GetFloat("_RimLight") != 1f ? 1f : 0f);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            lightingMaterial.SetFloat("_Toon", lightingMaterial.GetFloat("_Toon") != 1f ? 1f : 0f);
+        }
     }
 }
