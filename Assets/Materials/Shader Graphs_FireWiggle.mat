@@ -38,10 +38,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 1
+    - _Alpha: 0
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _Emission: 0
+    - _Emissiveness: 0.369
+    - _Noise_Color_Power: 0.291
+    - _Noise_Power: 0.233
     - _QueueControl: 0
     - _QueueOffset: 0
     - _height_multiplier: 5
@@ -51,8 +54,9 @@ Material:
     - _width_multiplier: 3
     - _wiggle_multiplier: 20
     m_Colors:
-    - _Color_A: {r: 0.72327036, g: 0.20242468, b: 0.20242468, a: 1}
-    - _Color_B: {r: 0.8113208, g: 0.8113208, b: 0.2066571, a: 1}
+    - _Color_A: {r: 1, g: 0, b: 0, a: 1}
+    - _Color_B: {r: 1, g: 0.9387051, b: 0.12893075, a: 1}
+    - _Noise_scroll: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &1486846613688152459

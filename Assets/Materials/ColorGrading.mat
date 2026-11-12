@@ -49,7 +49,7 @@ Material:
     - _NoiseValue: 0.54
     - _PaperTexture_Intensity: 0.882
     - _Pixelation: 5
-    - _PixelationToggle: 0
+    - _PixelationToggle: 1
     - _Sunset: 0
     - _SunsetBrightness: -0.873
     - _SunsetSaturations: 1.5
