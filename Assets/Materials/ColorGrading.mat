@@ -54,7 +54,10 @@ Material:
     - _SunsetBrightness: -0.873
     - _SunsetSaturations: 1.5
     - _SunsetTextureAlpha: 0
+    - _Vignette: 0.964657
+    - _Vignette_strength: 2
     m_Colors:
     - _SunsetTint: {r: 0.4716981, g: 0.2801569, b: 0.16642933, a: 1}
+    - _VignetteColor: {r: 0.4402515, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

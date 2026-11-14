@@ -2049,6 +2049,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1119559162}
     - target: {fileID: 2360253107053653451, guid: e86771939e8091748bc908e09e442f5b, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360253107053653451, guid: e86771939e8091748bc908e09e442f5b, type: 3}
       propertyPath: ColorGrading
       value: 
       objectReference: {fileID: 2100000, guid: f7c7cc2c988c23e4fb5c3f0ffd60ef92, type: 2}

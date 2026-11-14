@@ -16,6 +16,11 @@ public class Player : MonoBehaviour
     public GameObject playAgainButton;
     public Material ColorGrading;
     public Text CoconutCounter;
+    public float maxHealth = 100.0f;
+    private float health;
+    private float vignetteAmount = 0.0f;
+    public float vignetteSpeed = 5;
+    public float vignetteDrainSpeed = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +29,7 @@ public class Player : MonoBehaviour
         ColorGrading.SetFloat("_Grayscale",0f);
         ColorGrading.SetFloat("_Sunset",0f);
         ColorGrading.SetFloat("_PixelationToggle",0f);
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -44,20 +50,30 @@ public class Player : MonoBehaviour
         {
             moveDir.x = -1;
         }
+        vignetteAmount -= Time.deltaTime * vignetteDrainSpeed;
+        if(vignetteAmount < 0) vignetteAmount = 0;
+        ColorGrading.SetFloat("_Vignette",vignetteAmount);
     }
     void FixedUpdate()
     {
         rb.linearVelocity = new Vector3(moveDir.x * speed, rb.linearVelocity.y, moveDir.y * speed);
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.transform.CompareTag("Seagull"))
         {
-            Debug.Log("YOU DEAD!!!");
-            playAgainButton.SetActive(true);
-            loseText.SetActive(true);
-            ColorGrading.SetFloat("_Grayscale",1f);
-            ColorGrading.SetFloat("_PixelationToggle",1f);
+            health -= Time.deltaTime * 10;
+            if (health <= 0)
+            {
+                Debug.Log("YOU DEAD!!!");
+                playAgainButton.SetActive(true);
+                loseText.SetActive(true);
+                ColorGrading.SetFloat("_Grayscale", 1f);
+                ColorGrading.SetFloat("_PixelationToggle", 1f);
+            }
+            vignetteAmount += Time.deltaTime * vignetteSpeed;
+            if(vignetteAmount > 1) vignetteAmount = 1;
+            ColorGrading.SetFloat("_Vignette", vignetteAmount);
         }
     }
     private void OnTriggerEnter(Collider other)
