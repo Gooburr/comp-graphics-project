@@ -44,17 +44,17 @@ Material:
     - _Brightness: 0
     - _FadeContrast: 1.14
     - _FadeValue: 0.59
-    - _Grayscale: 1
+    - _Grayscale: 0
     - _Intensity: 1
     - _NoiseValue: 0.54
     - _PaperTexture_Intensity: 0.882
     - _Pixelation: 5
-    - _PixelationToggle: 1
+    - _PixelationToggle: 0
     - _Sunset: 0
     - _SunsetBrightness: -0.873
     - _SunsetSaturations: 1.5
     - _SunsetTextureAlpha: 0
-    - _Vignette: 0.964657
+    - _Vignette: 0
     - _Vignette_strength: 2
     m_Colors:
     - _SunsetTint: {r: 0.4716981, g: 0.2801569, b: 0.16642933, a: 1}
