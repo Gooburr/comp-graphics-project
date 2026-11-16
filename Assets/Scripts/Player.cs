@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,10 @@ public class Player : MonoBehaviour
     private float vignetteAmount = 0.0f;
     public float vignetteSpeed = 5;
     public float vignetteDrainSpeed = 1;
+    public GameObject leftFootPrint;
+    public GameObject rightFootPrint;
+    private bool stepLeft = true;
+    private int leavefootprint;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,16 +44,20 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             moveDir.y = 1;
+            CreateFootPrint();
         }else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             moveDir.y = -1;
+            CreateFootPrint();
         }
         if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             moveDir.x = 1;
+            CreateFootPrint();
         }else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             moveDir.x = -1;
+            CreateFootPrint();
         }
         vignetteAmount -= Time.deltaTime * vignetteDrainSpeed;
         if(vignetteAmount < 0) vignetteAmount = 0;
@@ -93,6 +102,25 @@ public class Player : MonoBehaviour
             }
             other.gameObject.SetActive(false);
             spawner.SpawnCoconut();
+        }
+    }
+    public void CreateFootPrint()
+    {
+        leavefootprint++;
+
+        if (leavefootprint > 30)
+        {
+            if (stepLeft)
+            {
+                Instantiate(leftFootPrint, transform.position - (transform.up/3), Quaternion.Euler(90f, 0f, 0f));
+                stepLeft = false;
+            }
+            else
+            {
+                Instantiate(rightFootPrint, transform.position - (transform.up/3), Quaternion.Euler(90f, 0f, 0f));
+                stepLeft = true;
+            }
+            leavefootprint = 0;
         }
     }
 }
