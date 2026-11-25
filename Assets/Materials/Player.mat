@@ -113,7 +113,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Ambient: 1
-    - _Ambient_Strength: 1
+    - _Ambient_Strength: 7.68
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _BumpScale: 1
@@ -131,16 +131,16 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimLight: 1
+    - _RimLight: 0
     - _RimPower: 1
     - _RimSaturation: 1
     - _Shininess: 0.1
     - _SmoothnessTextureChannel: 0
     - _Specular: 1
     - _SpecularHighlights: 1
-    - _SpecularRoughness: 1
+    - _SpecularRoughness: 10
     - _SrcBlend: 1
-    - _Toon: 1
+    - _Toon: 0
     - _ToonMax: 1
     - _ToonMin: 0.3
     - _ToonShades: 0.49

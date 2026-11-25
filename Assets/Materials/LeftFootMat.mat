@@ -64,7 +64,7 @@ Material:
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
-    - _Fade: 0.25442186
+    - _Fade: 0.13100778
     - _RightFoot: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
