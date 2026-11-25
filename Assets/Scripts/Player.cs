@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     public GameObject leftFootPrint;
     public GameObject rightFootPrint;
     private bool stepLeft = true;
+    public RawImage[] HP_UI;
     private int leavefootprint;
     // Start is called before the first frame update
     void Start()
@@ -72,6 +73,15 @@ public class Player : MonoBehaviour
         if (collision.transform.CompareTag("Seagull"))
         {
             health -= Time.deltaTime * 10;
+            try
+            {
+                HP_UI[(Mathf.RoundToInt(health)/2)-1].color = Color.black;
+            }
+            catch
+            {
+                Debug.Log("Dead");
+            }
+
             if (health <= 0)
             {
                 Debug.Log("YOU DEAD!!!");
